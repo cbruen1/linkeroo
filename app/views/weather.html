@@ -1,0 +1,8 @@
+<pre>
+	<div ng-repeat="neighborhood in neighborhoods" ng-controller="NeighborhoodController">
+		<span>{{neighborhood.name}}</span>
+		<a href="#" ng-click="updateCount('sunny')">Sunny</a>
+		<a href="#" ng-click="updateCount('rainy')">Rainy</a>
+	</div>
+</pre>
+<div ng-controller="NeighborhoodController" ng-init="init(neighborhood.value)"></div>
